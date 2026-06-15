@@ -1,0 +1,39 @@
+{{ config(
+    materialized='table',
+    schema='GOLDA1'
+) }}
+
+WITH dates AS (
+
+SELECT
+    DATEADD(
+        DAY,
+        ROW_NUMBER() OVER(ORDER BY SEQ4()) - 1,
+        '2023-01-01'
+    ) AS FULL_DATE
+
+FROM TABLE(GENERATOR(ROWCOUNT => 5000))
+
+)
+
+SELECT
+
+    TO_NUMBER(
+        TO_CHAR(FULL_DATE,'YYYYMMDD')
+    ) AS DATE_KEY,
+
+    FULL_DATE,
+
+    YEAR(FULL_DATE) AS YEAR,
+    MONTH(FULL_DATE) AS MONTH,
+    DAY(FULL_DATE) AS DAY,
+
+    MONTHNAME(FULL_DATE) AS MONTH_NAME,
+
+    QUARTER(FULL_DATE) AS QUARTER,
+
+    DAYNAME(FULL_DATE) AS DAY_NAME,
+
+    WEEK(FULL_DATE) AS WEEK_NUMBER
+
+FROM dates

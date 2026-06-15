@@ -1,0 +1,42 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: ECOMMERCE_DB
+    schema: BRONZE
+
+    tables:
+      # Master Tables
+      - name: customers
+      - name: products
+      - name: stores
+      - name: vendors
+      - name: delivery_partners
+      - name: warehouses
+      - name: product_supplier
+
+      # Sales Tables
+      - name: orders
+      - name: order_items
+      - name: payments
+      - name: shipments
+      - name: returns
+      - name: customer_reviews
+
+      # Supply Chain
+      - name: purchase_orders
+      - name: purchase_order_items
+      - name: receipts
+      - name: invoices
+      - name: transfer_orders
+      - name: transfer_order_items
+      - name: inventory_movements
+      - name: vendor_scorecard
+
+      # Event Tables
+      - name: order_events
+      - name: payment_events
+      - name: delivery_tracking
+      - name: cdc_customer
+      - name: clickstream
+      - name: user_activity

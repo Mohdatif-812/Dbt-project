@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: stg_customers
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+      - name: email
+        tests:
+          - not_null
+
+  - name: stg_products
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+      - name: name
+        tests:
+          - not_null
+
+  - name: stg_stores
+    columns:
+      - name: store_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_vendors
+    columns:
+      - name: vendor_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_delivery_partners
+    columns:
+      - name: partner_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_warehouses
+    columns:
+      - name: warehouse_id
+        tests:
+          - unique
+          - not_null
