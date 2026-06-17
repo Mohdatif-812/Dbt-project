@@ -1,0 +1,39 @@
+semantic_models:
+  - name: fact_payment
+
+    model: ref('fact_payment')
+
+    entities:
+      - name: payment
+        type: primary
+        expr: payment_id
+
+      - name: customer
+        type: foreign
+        expr: customer_key
+
+      - name: order
+        type: foreign
+        expr: order_id
+
+    dimensions:
+      - name: method
+        type: categorical
+
+      - name: status
+        type: categorical
+
+      - name: payment_date
+        type: time
+
+        type_params:
+          time_granularity: day
+
+    measures:
+      - name: payment_amount
+        agg: sum
+        expr: amount
+
+      - name: payment_count
+        agg: count_distinct
+        expr: payment_id

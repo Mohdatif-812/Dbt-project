@@ -1,0 +1,47 @@
+semantic_models:
+  - name: fact_returns
+    description: Customer product returns fact table
+
+    model: ref('fact_returns')
+
+    entities:
+      - name: return
+        type: primary
+        expr: return_id
+
+      - name: customer
+        type: foreign
+        expr: customer_key
+
+      - name: order
+        type: foreign
+        expr: order_id
+
+      - name: date
+        type: foreign
+        expr: date_key
+
+    dimensions:
+      - name: return_reason
+        type: categorical
+
+      - name: return_status
+        type: categorical
+
+      - name: return_date
+        type: time
+        expr: return_date
+
+        type_params:
+          time_granularity: day
+
+    measures:
+      - name: total_returns
+        description: Total number of returns
+        agg: count_distinct
+        expr: return_id
+
+      - name: returned_orders
+        description: Count of orders that were returned
+        agg: count_distinct
+        expr: order_id

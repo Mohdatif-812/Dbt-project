@@ -1,0 +1,47 @@
+semantic_models:
+  - name: fact_sales
+
+    model: ref('fact_sales')
+
+    description: Sales transaction fact table
+
+    entities:
+      - name: order
+        type: primary
+        expr: order_id
+
+      - name: customer
+        type: foreign
+        expr: customer_key
+
+      - name: product
+        type: foreign
+        expr: product_key
+
+      - name: store
+        type: foreign
+        expr: store_key
+
+    dimensions:
+      - name: order_status
+        type: categorical
+
+      - name: order_date
+        type: time
+        expr: order_date
+
+        type_params:
+          time_granularity: day
+
+    measures:
+      - name: sales_amount
+        agg: sum
+        expr: sales_amount
+
+      - name: quantity_sold
+        agg: sum
+        expr: quantity
+
+      - name: total_orders
+        agg: count_distinct
+        expr: order_id

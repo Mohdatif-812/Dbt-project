@@ -1,0 +1,32 @@
+semantic_models:
+  - name: fact_inventory_movement
+
+    model: ref('fact_inventory_movement')
+
+    entities:
+      - name: movement
+        type: primary
+        expr: movement_id
+
+      - name: product
+        type: foreign
+        expr: product_key
+
+      - name: warehouse
+        type: foreign
+        expr: warehouse_key
+
+    dimensions:
+      - name: movement_type
+        type: categorical
+
+      - name: movement_date
+        type: time
+
+        type_params:
+          time_granularity: day
+
+    measures:
+      - name: quantity_moved
+        agg: sum
+        expr: quantity
