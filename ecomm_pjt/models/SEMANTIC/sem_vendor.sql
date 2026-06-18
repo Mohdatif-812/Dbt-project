@@ -16,7 +16,7 @@ select
 
 from {{ ref('FACT_PROCUREMENT') }} f
 
-left join {{ ref('DIM_VENDOR') }} v
+left join {{ ref('dim_vendor') }} v
     on f.vendor_key = v.vendor_key
 
 group by

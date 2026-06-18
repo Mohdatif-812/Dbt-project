@@ -9,10 +9,10 @@ select
 
 from {{ ref('FACT_INVENTORY') }} f
 
-left join {{ ref('DIM_PRODUCT') }} p
+left join {{ ref('dim_product') }} p
     on f.product_key = p.product_key
 
-left join {{ ref('DIM_WAREHOUSE') }} w
+left join {{ ref('dim_warehouse') }} w
     on f.warehouse_key = w.warehouse_key
 
 group by

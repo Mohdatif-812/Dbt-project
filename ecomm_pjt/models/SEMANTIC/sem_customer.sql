@@ -17,7 +17,7 @@ select
 
 from {{ ref('FACT_SALES') }} f
 
-join {{ ref('dim_customer') }} c
+join {{ ref('dim_customer') }} c  
     on f.customer_key = c.customer_key
 
 group by

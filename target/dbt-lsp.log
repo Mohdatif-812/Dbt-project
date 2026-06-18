@@ -1,0 +1,176 @@
+==================== 2026-06-17T11:38:53.766910Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-17T11:38:53.766994Z | 3d50efbe-070a-41cd-b454-871f4c0f595c ====================
+11:38:53.767015 [info ]: Starting dbt LSP server
+11:38:53.767030 [info ]: Connecting to LSP client on port 58433
+11:38:53.767249 [info ]: Successfully connected to LSP client
+11:38:53.767265 [info ]: Creating LSP service...
+11:38:53.830339 [info ]: Creating LSP server...
+11:38:53.830366 [info ]: Starting LSP server...
+11:38:54.715955 [info ]: Started loading project
+11:38:54.716074 [info ]: Finished loading project [  0.00s]
+11:39:10.035524 [info ]: Started loading project
+11:39:10.036248 [info ]: Loading profiles.yml
+11:39:10.042809 [debug]:    Started loading packages
+11:39:10.043422 [debug]:     Loaded [  0.00s] packages
+11:39:10.044152 [info ]: Finished loading project [  0.01s]
+11:39:10.044407 [info ]: Started parsing
+11:39:10.078250 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.ecomm_pjt.GOLDA1
+- models.ecomm_pjt.SILVERA1
+11:39:10.078840 [info ]: Cached model count updated: 0 models (estimate)
+11:39:10.078852 [info ]: Cached model count updated: 0 models (accurate)
+11:39:10.078893 [info ]: Started scheduling
+11:39:10.078946 [info ]: Finished scheduling [  0.00s]
+11:39:10.078962 [debug]: Compilation - 0 nodes selected: {}
+11:39:10.078984 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+11:39:10.078995 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+11:39:10.079018 [info ]: Started scheduling
+11:39:10.079027 [info ]: Finished scheduling [  0.00s]
+11:39:10.086613 [debug]: No platform credentials found, skipping remote license
+11:39:10.086967 [info ]: Started building task graph
+11:39:10.087001 [info ]: Finished building task graph [  0.00s]
+11:39:10.090521 [info ]: Started scheduling
+11:39:10.090553 [info ]: Finished scheduling [  0.00s]
+11:39:10.090832 [info ]: Cached model count updated: 0 models (accurate)
+11:39:10.090857 [info ]: Finished parsing [  0.05s]
+11:39:15.721574 [info ]: Loading profiles.yml
+11:39:16.355614 [info ]: Started loading project
+11:39:16.355890 [info ]: Loading profiles.yml
+11:39:16.376429 [info ]: Cached model count updated: 0 models (estimate)
+11:39:16.376454 [info ]: Cached model count updated: 0 models (accurate)
+11:39:16.376466 [info ]: Started scheduling
+11:39:16.376487 [info ]: Finished scheduling [  0.00s]
+11:39:16.376502 [debug]: Compilation - 0 nodes selected: {}
+11:39:16.376522 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+11:39:16.377429 [info ]: Started building task graph
+11:39:16.377452 [info ]: Finished building task graph [  0.00s]
+11:39:16.380055 [info ]: Started scheduling
+11:39:16.380083 [info ]: Finished scheduling [  0.00s]
+11:39:16.380206 [info ]: Finished loading project [  0.02s]
+11:39:16.380381 [info ]: Cached model count updated: 0 models (accurate)
+==================== 2026-06-17T11:52:46.953051Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-17T11:52:46.953135Z | 9f4b3313-fed7-4b77-9304-add6572499d4 ====================
+11:52:46.953156 [info ]: Starting dbt LSP server
+11:52:46.953172 [info ]: Connecting to LSP client on port 56095
+11:52:46.953417 [info ]: Successfully connected to LSP client
+11:52:46.953438 [info ]: Creating LSP service...
+11:52:47.018426 [info ]: Creating LSP server...
+11:52:47.018453 [info ]: Starting LSP server...
+11:52:48.486212 [info ]: Loading profiles.yml
+11:52:48.935662 [info ]: Started loading project
+11:52:48.936024 [info ]: Loading profiles.yml
+11:52:48.942900 [debug]:    Started loading packages
+11:52:48.943463 [debug]:     Loaded [  0.00s] packages
+11:52:48.944155 [info ]: Finished loading project [  0.01s]
+11:52:48.944416 [info ]: Started parsing
+11:52:48.974178 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.ecomm_pjt.GOLDA1
+- models.ecomm_pjt.SILVERA1
+11:52:48.974803 [info ]: Cached model count updated: 0 models (estimate)
+11:52:48.974817 [info ]: Cached model count updated: 0 models (accurate)
+11:52:48.974846 [info ]: Started scheduling
+11:52:48.974946 [info ]: Finished scheduling [  0.00s]
+11:52:48.974963 [debug]: Compilation - 0 nodes selected: {}
+11:52:48.974986 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+11:52:48.974997 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+11:52:48.975003 [info ]: Started scheduling
+11:52:48.975012 [info ]: Finished scheduling [  0.00s]
+11:52:48.981869 [debug]: No platform credentials found, skipping remote license
+11:52:48.982172 [info ]: Started building task graph
+11:52:48.982206 [info ]: Finished building task graph [  0.00s]
+11:52:48.986060 [info ]: Started scheduling
+11:52:48.986093 [info ]: Finished scheduling [  0.00s]
+11:52:48.986375 [info ]: Cached model count updated: 0 models (accurate)
+11:52:48.986394 [info ]: Finished parsing [  0.04s]
+11:52:54.625616 [info ]: Started loading project
+11:52:54.625878 [info ]: Loading profiles.yml
+11:52:54.646889 [info ]: Cached model count updated: 0 models (estimate)
+11:52:54.646915 [info ]: Cached model count updated: 0 models (accurate)
+11:52:54.646927 [info ]: Started scheduling
+11:52:54.646952 [info ]: Finished scheduling [  0.00s]
+11:52:54.646966 [debug]: Compilation - 0 nodes selected: {}
+11:52:54.646986 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+11:52:54.647952 [info ]: Started building task graph
+11:52:54.647978 [info ]: Finished building task graph [  0.00s]
+11:52:54.650793 [info ]: Started scheduling
+11:52:54.650823 [info ]: Finished scheduling [  0.00s]
+11:52:54.651014 [info ]: Finished loading project [  0.03s]
+11:52:54.651162 [info ]: Cached model count updated: 0 models (accurate)
+11:53:04.105942 [info ]: Loading profiles.yml
+11:53:05.385841 [info ]: Started loading project
+11:53:05.386099 [info ]: Loading profiles.yml
+11:53:05.405323 [info ]: Finished loading project [  0.02s]
+11:53:05.405537 [info ]: Cached model count updated: 0 models (accurate)
+11:53:07.745521 [info ]: Started loading project
+11:53:07.745611 [info ]: Finished loading project [  0.00s]
+11:53:07.745730 [info ]: Cached model count updated: 0 models (accurate)
+==================== 2026-06-17T12:00:23.537565Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-17T12:00:23.537647Z | f3f3804d-8d1f-4962-a0cd-6355d6009807 ====================
+12:00:23.537665 [info ]: Starting dbt LSP server
+12:00:23.537678 [info ]: Connecting to LSP client on port 42971
+12:00:23.537868 [info ]: Successfully connected to LSP client
+12:00:23.537885 [info ]: Creating LSP service...
+12:00:23.598620 [info ]: Creating LSP server...
+12:00:23.598641 [info ]: Starting LSP server...
+12:00:25.245605 [info ]: Started loading project
+12:00:25.245693 [info ]: Finished loading project [  0.00s]
+==================== 2026-06-17T12:10:07.711491Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-17T12:10:07.711578Z | ca01f80c-b379-4551-a31d-80835fea5f03 ====================
+12:10:07.711601 [info ]: Starting dbt LSP server
+12:10:07.711616 [info ]: Connecting to LSP client on port 51647
+12:10:07.711824 [info ]: Successfully connected to LSP client
+12:10:07.711847 [info ]: Creating LSP service...
+12:10:07.773579 [info ]: Creating LSP server...
+12:10:07.773600 [info ]: Starting LSP server...
+==================== 2026-06-17T12:10:24.702842Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-17T12:10:24.702933Z | a8b37c82-a60c-4ecf-b9b8-566ef4f76f18 ====================
+12:10:24.702953 [info ]: Starting dbt LSP server
+12:10:24.702968 [info ]: Connecting to LSP client on port 42217
+12:10:24.703178 [info ]: Successfully connected to LSP client
+12:10:24.703196 [info ]: Creating LSP service...
+12:10:24.765458 [info ]: Creating LSP server...
+12:10:24.765489 [info ]: Starting LSP server...
+12:10:26.645620 [info ]: Started loading project
+12:10:26.645705 [info ]: Finished loading project [  0.00s]
+==================== 2026-06-17T12:19:04.417295Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-17T12:19:04.417405Z | 4e0036a4-6bc3-4247-9a50-6b99318a0a07 ====================
+12:19:04.417426 [info ]: Starting dbt LSP server
+12:19:04.417441 [info ]: Connecting to LSP client on port 52849
+12:19:04.417647 [info ]: Successfully connected to LSP client
+12:19:04.417665 [info ]: Creating LSP service...
+12:19:04.478317 [info ]: Creating LSP server...
+12:19:04.478338 [info ]: Starting LSP server...
+12:19:07.643804 [info ]: Started loading project
+12:19:07.643892 [info ]: Finished loading project [  0.00s]
+==================== 2026-06-17T12:22:18.487013Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-17T12:22:18.487104Z | aeb655a5-d563-4318-9645-3d9a10825303 ====================
+12:22:18.487123 [info ]: Starting dbt LSP server
+12:22:18.487136 [info ]: Connecting to LSP client on port 58585
+12:22:18.487330 [info ]: Successfully connected to LSP client
+12:22:18.487346 [info ]: Creating LSP service...
+12:22:18.549027 [info ]: Creating LSP server...
+12:22:18.549053 [info ]: Starting LSP server...
+12:22:19.165647 [info ]: Started loading project
+12:22:19.165738 [info ]: Finished loading project [  0.00s]
+==================== 2026-06-17T12:22:46.353114Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-17T12:22:46.353203Z | 6214d831-79a2-4d08-b0e9-64f1894453b1 ====================
+12:22:46.353224 [info ]: Starting dbt LSP server
+12:22:46.353237 [info ]: Connecting to LSP client on port 55557
+12:22:46.353475 [info ]: Successfully connected to LSP client
+12:22:46.353495 [info ]: Creating LSP service...
+12:22:46.415969 [info ]: Creating LSP server...
+12:22:46.415996 [info ]: Starting LSP server...
+12:22:47.085637 [info ]: Started loading project
+12:22:47.085720 [info ]: Finished loading project [  0.00s]
+==================== 2026-06-17T12:27:32.958934Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-17T12:27:32.959022Z | 8a6eed60-7c3c-44ca-b7fa-e4fc1219e917 ====================
+12:27:32.959042 [info ]: Starting dbt LSP server
+12:27:32.959057 [info ]: Connecting to LSP client on port 37945
+12:27:32.959259 [info ]: Successfully connected to LSP client
+12:27:32.959280 [info ]: Creating LSP service...
+12:27:33.019828 [info ]: Creating LSP server...
+12:27:33.019855 [info ]: Starting LSP server...
+12:27:35.835609 [info ]: Started loading project
+12:27:35.835706 [info ]: Finished loading project [  0.00s]
